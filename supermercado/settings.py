@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'supermercado.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "supermercado",
+        "NAME": "supermercado2",
         "USER": "jose",
         "PASSWORD": "abc.123",
         "HOST": "127.0.0.1",
