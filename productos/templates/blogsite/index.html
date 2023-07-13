@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Descripción</td>
+            <td>Precio</td>
+        </tr>
+        {% for producto in productos %}
+            <tr>
+                <td><a href="actualizar/{{ producto.id }}/">{{ producto.id }}</a></td>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.descripcion }}</td>
+                <td>{{ producto.precio }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p>
+        <a href="agregar/">Agregar Producto</a>
+    </p>
+</body>
+</html>
